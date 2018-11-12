@@ -22,9 +22,9 @@ public class Main {
         String studentUrl = "https://studies.cs.helsinki.fi/courses/students/" + studentNr + "/submissions";
         String coursesUrl = "https://studies.cs.helsinki.fi/courses/courseinfo";
         /*String ohtuStats = "https://api.myjson.com/bins/8wzz2";
-        String railsStats = "https://studies.cs.helsinki.fi/courses/rails2018/stats";*/
+        String railsStats = "https://studies.cs.helsinki.fi/courses/rails2018/stats";
 
-        /*JsonParser parser = new JsonParser();
+        JsonParser parser = new JsonParser();
         JsonObject parsittuData = parser.parse(ohtuStats).getAsJsonObject();*/
         String bodyText = Request.Get(studentUrl).execute().returnContent().asString();
         String courseBodyText = Request.Get(coursesUrl).execute().returnContent().asString();
@@ -32,8 +32,7 @@ public class Main {
         Gson mapper = new Gson();
         Submission[] subs = mapper.fromJson(bodyText, Submission[].class);
         Course[] courses = mapper.fromJson(courseBodyText, Course[].class);
-        // CourseStats[] courseStats = mapper.fromJson(courseStatsParse,
-        // CourseStats[].class);
+        // CourseStats[] courseStats = mapper.fromJson(courseStatsParse,CourseStats[].class);
 
         StudentsCourses sc = new StudentsCourses(subs, courses);
         System.out.println("Opiskelijan " + studentNr + " kurssit:\n");
