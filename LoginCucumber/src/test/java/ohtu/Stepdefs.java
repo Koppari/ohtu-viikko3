@@ -16,20 +16,25 @@ public class Stepdefs {
     UserDao userDao = new InMemoryUserDao();
     AuthenticationService auth = new AuthenticationService(userDao);
     List<String> inputLines = new ArrayList<>();
-    
+
     @Given("^command login is selected$")
     public void command_login_selected() throws Throwable {
         inputLines.add("login");
     }
 
+    @Given("^command new is selected$")
+    public void command_new_is_selected() throws Throwable {
+        inputLines.add("new");
+    }
+
     @When("^username \"([^\"]*)\" and password \"([^\"]*)\" are entered$")
     public void a_username_and_password_are_entered(String username, String password) throws Throwable {
-       inputLines.add(username);
-       inputLines.add(password);
-       
-       io = new StubIO(inputLines); 
-       app = new App(io, auth);
-       app.run();
+        inputLines.add(username);
+        inputLines.add(password);
+
+        io = new StubIO(inputLines);
+        app = new App(io, auth);
+        app.run();
     }
 
     @Then("^system will respond with \"([^\"]*)\"$")
