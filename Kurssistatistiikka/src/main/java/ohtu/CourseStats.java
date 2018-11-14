@@ -9,7 +9,7 @@ public class CourseStats {
 
     @Override
     public String toString() {
-        return "";
+        return "aa";
     }
 
     public int getStudents() {
