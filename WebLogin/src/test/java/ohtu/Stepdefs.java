@@ -28,6 +28,20 @@ public class Stepdefs {
         element.click();
     }
 
+    @Given("^user with username \"([^\"]*)\" with password \"([^\"]*)\" is successfully created$")
+    public void user_is_successfully_created(String username, String password) throws Throwable {
+        new_user_selected();
+        createUser(username, password, password);
+        driver.get(baseUrl);
+    }
+
+    @Given("^user with username \"([^\"]*)\" and password \"([^\"]*)\" is tried to be created$")
+    public void user_is_not_successfully_created(String username, String password) throws Throwable {
+        new_user_selected();
+        createUser(username, password, password);
+        driver.get(baseUrl);
+    }
+
     @When("^a valid username \"([^\"]*)\" and password \"([^\"]*)\" and matching password confirmation are entered$")
     public void valid_username_and_password_are_given(String username, String password) throws Throwable {
         createUser(username, password, password);
@@ -39,7 +53,8 @@ public class Stepdefs {
     }
 
     @When("^a valid username \"([^\"]*)\" and valid password \"([^\"]*)\" and nonmatching password confirmation are entered$")
-    public void valid_username_and_invalid_passwordconfirmaiton_are_given(String username, String password) throws Throwable {
+    public void valid_username_and_invalid_passwordconfirmaiton_are_given(String username, String password)
+            throws Throwable {
         createUser(username, password, "aaa");
     }
 
@@ -84,7 +99,7 @@ public class Stepdefs {
     }
 
     @Then("^a new user is created$")
-    public void new_use_is_created() throws Throwable {
+    public void new_user_is_created() throws Throwable {
         pageHasContent("Welcome to Ohtu Application!");
     }
 
