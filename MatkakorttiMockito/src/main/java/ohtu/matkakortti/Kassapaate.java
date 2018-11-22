@@ -10,7 +10,7 @@ public class Kassapaate {
 
     public void lataa(Matkakortti kortti, int summa) {
         if (summa >= 0) {
-            kortti.lataa(summa);   
+            kortti.lataa(summa);
         }
     }
 

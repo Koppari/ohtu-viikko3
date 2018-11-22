@@ -37,6 +37,7 @@ public class KassapaateTest {
         when(kortti.getSaldo()).thenReturn(4);
         kassa.ostaLounas(kortti);
 
+        verify(kortti, times(1)).getSaldo();
         verify(kortti, times(0)).osta(anyInt());
     }
 
