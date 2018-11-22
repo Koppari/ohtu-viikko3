@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ohtu.verkkokauppa.VerkkokauppaTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-11-22T02:19:34" hostname="Koppari" time="0.367">
+<testsuite name="ohtu.verkkokauppa.VerkkokauppaTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2018-11-22T02:50:14" hostname="Koppari" time="0.551">
   <properties/>
-  <testcase name="kahdenEriTuotteenOstoksenPaaytyttyaPankinMetodiaTilisiirtoKutsutaanOikeillaParametrilla" classname="ohtu.verkkokauppa.VerkkokauppaTest" time="0.363"/>
-  <testcase name="ostoksenPaaytyttyaPankinMetodiaTilisiirtoKutsutaanOikeillaParametrilla" classname="ohtu.verkkokauppa.VerkkokauppaTest" time="0.0"/>
-  <testcase name="kahdenSamanTuotteenOstoksenPaaytyttyaPankinMetodiaTilisiirtoKutsutaanOikeillaParametrilla" classname="ohtu.verkkokauppa.VerkkokauppaTest" time="0.0"/>
+  <testcase name="kahdenEriTuotteenOstoksenPaaytyttyaPankinMetodiaTilisiirtoKutsutaanOikeillaParametrilla" classname="ohtu.verkkokauppa.VerkkokauppaTest" time="0.545"/>
+  <testcase name="ostoksenPaaytyttyaPankinMetodiaTilisiirtoKutsutaanOikeillaParametrilla" classname="ohtu.verkkokauppa.VerkkokauppaTest" time="0.001"/>
+  <testcase name="kahdenSamanTuotteenOstoksenPaaytyttyaPankinMetodiaTilisiirtoKutsutaanOikeillaParametrilla" classname="ohtu.verkkokauppa.VerkkokauppaTest" time="0.001"/>
   <testcase name="tarpeeksiOlevanJaLoppuneenTuotteenOstoksenPaaytyttyaPankinMetodiaTilisiirtoKutsutaanOikeillaParametrilla" classname="ohtu.verkkokauppa.VerkkokauppaTest" time="0.001"/>
   <testcase name="ostoksenPaaytyttyaPankinMetodiaTilisiirtoKutsutaan" classname="ohtu.verkkokauppa.VerkkokauppaTest" time="0.001"/>
+  <testcase name="koristaPoistoKutsuuMetodejaHaeTuoteJaPalauta" classname="ohtu.verkkokauppa.VerkkokauppaTest" time="0.001"/>
+  <testcase name="kauppaPyytaaUudenViitenumeron" classname="ohtu.verkkokauppa.VerkkokauppaTest" time="0.0"/>
+  <testcase name="aloitaAsiointiNollaaEdellisenOstoksenTiedot" classname="ohtu.verkkokauppa.VerkkokauppaTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
