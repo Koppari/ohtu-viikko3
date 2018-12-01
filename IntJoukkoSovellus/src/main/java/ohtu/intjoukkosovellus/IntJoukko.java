@@ -102,7 +102,7 @@ public class IntJoukko {
         return taulu;
     }
 
-    public static void lisaaTauluJoukkoon(IntJoukko intJoukko, int[] tauluYksi, int[] tauluKaksi) {
+    public static void lisaaTaulutJoukkoon(IntJoukko intJoukko, int[] tauluYksi, int[] tauluKaksi) {
         for (int i = 0; i < tauluYksi.length; i++) {
             intJoukko.lisaa(tauluYksi[i]);
         }
@@ -115,7 +115,7 @@ public class IntJoukko {
         IntJoukko x = new IntJoukko();
         int[] aTaulu = a.toIntArray();
         int[] bTaulu = b.toIntArray();
-        lisaaTauluJoukkoon(x, aTaulu, bTaulu);
+        lisaaTaulutJoukkoon(x, aTaulu, bTaulu);
         return x;
     }
 
@@ -125,7 +125,7 @@ public class IntJoukko {
         int[] bTaulu = b.toIntArray();
         for (int i = 0; i < aTaulu.length; i++) {
             for (int j = 0; j < bTaulu.length; j++) {
-                lisaaTauluJoukkoon(y, bTaulu, bTaulu);
+                lisaaTaulutJoukkoon(y, bTaulu, bTaulu);
             }
         }
         return y;
@@ -135,7 +135,7 @@ public class IntJoukko {
         IntJoukko z = new IntJoukko();
         int[] aTaulu = a.toIntArray();
         int[] bTaulu = b.toIntArray();
-        lisaaTauluJoukkoon(z, aTaulu, bTaulu);
+        lisaaTaulutJoukkoon(z, aTaulu, bTaulu);
         for (int i = 0; i < bTaulu.length; i++) {
             z.poista(i);
         }
