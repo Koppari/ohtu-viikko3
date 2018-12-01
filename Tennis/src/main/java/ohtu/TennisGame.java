@@ -1,7 +1,6 @@
 package ohtu;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class TennisGame {
 
@@ -11,7 +10,7 @@ public class TennisGame {
     private int playerOneScore = 0;
     private int playerTwoScore = 0;
 
-    private final Map<Integer, String> SCORES = new HashMap<Integer, String>() {
+    private final HashMap<Integer, String> SCORES = new HashMap<Integer, String>() {
         {
             put(0, "Love");
             put(1, "Fifteen");
@@ -37,7 +36,7 @@ public class TennisGame {
     }
 
     public void wonPoint(String playerWhoScored) {
-        if (playerWhoScored == playerOne)
+        if (playerWhoScored.equals(playerOne))
             playerOneScore++;
         else
             playerTwoScore++;
