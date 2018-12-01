@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ohtu.intjoukkosovellus.IntJoukkoKaksiparametrisellaKonstruktorillaTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2018-11-29T10:27:44" hostname="Koppari" time="0.003">
+<testsuite name="ohtu.intjoukkosovellus.IntJoukkoKaksiparametrisellaKonstruktorillaTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2018-12-01T05:47:20" hostname="Koppari" time="0.003">
   <properties/>
-  <testcase name="samaLukuMeneeJoukkoonVaanKerran" classname="ohtu.intjoukkosovellus.IntJoukkoKaksiparametrisellaKonstruktorillaTest" time="0.0"/>
+  <testcase name="samaLukuMeneeJoukkoonVaanKerran" classname="ohtu.intjoukkosovellus.IntJoukkoKaksiparametrisellaKonstruktorillaTest" time="0.001"/>
   <testcase name="poistettuEiOleEnaaJoukossa" classname="ohtu.intjoukkosovellus.IntJoukkoKaksiparametrisellaKonstruktorillaTest" time="0.0"/>
   <testcase name="toStringToimii" classname="ohtu.intjoukkosovellus.IntJoukkoKaksiparametrisellaKonstruktorillaTest" time="0.0"/>
   <testcase name="toStringToimiiTyhjallaJoukolla" classname="ohtu.intjoukkosovellus.IntJoukkoKaksiparametrisellaKonstruktorillaTest" time="0.0"/>

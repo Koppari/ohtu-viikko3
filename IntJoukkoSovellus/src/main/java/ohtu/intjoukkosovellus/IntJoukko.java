@@ -3,11 +3,10 @@ package ohtu.intjoukkosovellus;
 
 public class IntJoukko {
 
-    public final static int KAPASITEETTI = 5, // aloitustalukon koko
-            OLETUSKASVATUS = 5; // luotava uusi taulukko on näin paljon isompi kuin vanha
-    private int kasvatuskoko; // Uusi taulukko on tämän verran vanhaa suurempi.
-    private int[] ljono; // Joukon luvut säilytetään taulukon alkupäässä.
-    private int alkioidenLkm; // Tyhjässä joukossa alkioiden_määrä on nolla.
+    public final static int KAPASITEETTI = 5, OLETUSKASVATUS = 5;
+    private int kasvatuskoko;
+    private int[] ljono;
+    private int alkioidenLkm;
 
     public IntJoukko() {
         this(KAPASITEETTI, OLETUSKASVATUS);
@@ -87,14 +86,12 @@ public class IntJoukko {
     }
 
     public String jononJasenet() {
-        String jononJasenet = "{";
+        String jononJasenet = "";
         for (int i = 0; i < alkioidenLkm - 1; i++) {
-            jononJasenet += ljono[i];
-            jononJasenet += ", ";
+            jononJasenet += ljono[i] + ", ";
         }
         jononJasenet += ljono[alkioidenLkm - 1];
-        jononJasenet += "}";
-        return jononJasenet;
+        return "{" + jononJasenet + "}";
     }
 
     public int[] toIntArray() {
