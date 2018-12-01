@@ -57,27 +57,12 @@ public class IntJoukko {
     }
 
     public void poista(int luku) {
-        int poistettavanIndeksi = -1;
         for (int i = 0; i < alkioidenLkm; i++) {
-            if (luku == ljono[i]) {
-                poistettavanIndeksi = i; // siis luku löytyy tuosta kohdasta :D
-                ljono[poistettavanIndeksi] = 0;
-                break;
+            if (ljono[i] == luku) { // siirretään häntään ja poistetaan
+                ljono[i] = ljono[alkioidenLkm - 1];
+                alkioidenLkm--;
             }
         }
-        if (poistettavanIndeksi != -1) {
-            etsiLuku(poistettavanIndeksi);
-        }
-    }
-
-    public void etsiLuku(int poistettavanIndeksi) {
-        int apu;
-        for (int j = poistettavanIndeksi; j < alkioidenLkm - 1; j++) {
-            apu = ljono[j];
-            ljono[j] = ljono[j + 1];
-            ljono[j + 1] = apu;
-        }
-        alkioidenLkm--;
     }
 
     private void kopioiTaulukko(int[] vanha, int[] uusi) {
