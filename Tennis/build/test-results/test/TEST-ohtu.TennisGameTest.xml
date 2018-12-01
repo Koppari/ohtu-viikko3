@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ohtu.TennisGameTest" tests="33" skipped="0" failures="0" errors="0" timestamp="2018-12-01T05:25:56" hostname="Koppari" time="0.005">
+<testsuite name="ohtu.TennisGameTest" tests="33" skipped="0" failures="0" errors="0" timestamp="2018-12-01T05:40:08" hostname="Koppari" time="0.006">
   <properties/>
   <testcase name="checkAllScoresTennisGame[0]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[1]" classname="ohtu.TennisGameTest" time="0.0"/>
@@ -8,13 +8,13 @@
   <testcase name="checkAllScoresTennisGame[4]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[5]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[6]" classname="ohtu.TennisGameTest" time="0.0"/>
-  <testcase name="checkAllScoresTennisGame[7]" classname="ohtu.TennisGameTest" time="0.0"/>
+  <testcase name="checkAllScoresTennisGame[7]" classname="ohtu.TennisGameTest" time="0.001"/>
   <testcase name="checkAllScoresTennisGame[8]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[9]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[10]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[11]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[12]" classname="ohtu.TennisGameTest" time="0.0"/>
-  <testcase name="checkAllScoresTennisGame[13]" classname="ohtu.TennisGameTest" time="0.0"/>
+  <testcase name="checkAllScoresTennisGame[13]" classname="ohtu.TennisGameTest" time="0.001"/>
   <testcase name="checkAllScoresTennisGame[14]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[15]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[16]" classname="ohtu.TennisGameTest" time="0.0"/>
@@ -25,12 +25,12 @@
   <testcase name="checkAllScoresTennisGame[21]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[22]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[23]" classname="ohtu.TennisGameTest" time="0.0"/>
-  <testcase name="checkAllScoresTennisGame[24]" classname="ohtu.TennisGameTest" time="0.001"/>
+  <testcase name="checkAllScoresTennisGame[24]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[25]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[26]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[27]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[28]" classname="ohtu.TennisGameTest" time="0.0"/>
-  <testcase name="checkAllScoresTennisGame[29]" classname="ohtu.TennisGameTest" time="0.0"/>
+  <testcase name="checkAllScoresTennisGame[29]" classname="ohtu.TennisGameTest" time="0.001"/>
   <testcase name="checkAllScoresTennisGame[30]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[31]" classname="ohtu.TennisGameTest" time="0.0"/>
   <testcase name="checkAllScoresTennisGame[32]" classname="ohtu.TennisGameTest" time="0.0"/>

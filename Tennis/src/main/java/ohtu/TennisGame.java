@@ -50,7 +50,7 @@ public class TennisGame {
     }
 
     public void playerScores() {
-        score += SCORES.get(playerOneScore) + "-" + SCORES.get(playerTwoScore);
+        score = SCORES.get(playerOneScore) + "-" + SCORES.get(playerTwoScore);
     }
 
     public void gamePoint() {

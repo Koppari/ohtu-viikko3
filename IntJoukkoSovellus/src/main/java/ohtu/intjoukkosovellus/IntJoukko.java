@@ -108,7 +108,7 @@ public class IntJoukko {
     public static void lisaaTauluJoukkoon(IntJoukko intJoukko, int[] taulu) {
         for (int i = 0; i < taulu.length; i++) {
             intJoukko.lisaa(taulu[i]);
-        }       
+        }
     }
 
     public static IntJoukko yhdiste(IntJoukko a, IntJoukko b) {
