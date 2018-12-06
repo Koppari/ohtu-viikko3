@@ -9,7 +9,10 @@ public class Nollaa implements Komento {
     TextField syotekentta;
     Button nollaa;
     Button undo;
+    int edellinen;
     Sovelluslogiikka sovellus;
+
+    int edellinenTulos;
 
     public Nollaa(TextField tuloskentta, TextField syotekentta, Button nollaa, Button undo, Sovelluslogiikka sovellus) {
         this.tuloskentta = tuloskentta;
@@ -21,6 +24,7 @@ public class Nollaa implements Komento {
 
     @Override
     public void suorita() {
+        this.edellinenTulos = sovellus.tulos();
         sovellus.nollaa();
         int laskunTulos = sovellus.tulos();
         syotekentta.setText("");
@@ -35,7 +39,8 @@ public class Nollaa implements Komento {
 
     @Override
     public void peru() {
-        System.out.println("undo pressed");
+        sovellus.setTulos(edellinenTulos);
+        tuloskentta.setText("" + edellinenTulos);
     }
 
 }
