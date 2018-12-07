@@ -1,4 +1,3 @@
-
 package statistics.matcher;
 
 import statistics.Player;
